@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <form method="POST" action="/api/books/<%=_id %>?_method=PUT">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="hidden" name="id" value="<%=_id %>">
+      <p><input type="text" name="pages" placeholder="count pages"/></p>
+      <input type="submit" value="update"/>
+    </form>
+</body>
+<html>
